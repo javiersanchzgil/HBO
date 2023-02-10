@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201C29"
+    android:backgroundTint="#0A090C"
+    tools:context=".ajustes">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/volverajustes"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            app:srcCompat="@drawable/volver"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ajustesletra"
+            android:layout_width="329dp"
+            android:layout_height="61dp"
+            android:layout_weight="400"
+            app:srcCompat="@drawable/ajustesletra" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="653dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.972">
+
+        <ImageButton
+            android:id="@+id/cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#000000"
+            app:srcCompat="@drawable/cuenta"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/opcionesvideo"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#000000"
+            app:srcCompat="@drawable/reproducir"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ayuda"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#000000"
+            app:srcCompat="@drawable/ayuda"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:srcCompat="@drawable/info" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
