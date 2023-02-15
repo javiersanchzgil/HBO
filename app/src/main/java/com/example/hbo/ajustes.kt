@@ -19,5 +19,6 @@ class ajustes : AppCompatActivity() {
             startActivity(intent)
         }
 
+
     }
 }

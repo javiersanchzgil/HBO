@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#0C0C0C"
+    android:background="#090909"
+    android:backgroundTint="#0B0A0A"
     tools:context=".MainActivity">
 
     <ImageView
@@ -81,7 +81,7 @@
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#0C0C0C"
             app:srcCompat="@drawable/hbo"
             tools:ignore="SpeakableTextPresentCheck" />
 

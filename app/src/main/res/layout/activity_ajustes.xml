@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#201C29"
-    android:backgroundTint="#0A090C"
+    android:backgroundTint="#0E0E0E"
     tools:context=".ajustes">
 
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_width="31dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#000000"
+            android:background="#0E0E0E"
             app:srcCompat="@drawable/volver"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/cuenta"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:background="#000000"
+            android:background="#0E0E0E"
             app:srcCompat="@drawable/cuenta"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -59,7 +59,7 @@
             android:id="@+id/opcionesvideo"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:background="#000000"
+            android:background="#0E0E0E"
             app:srcCompat="@drawable/reproducir"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/ayuda"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:background="#000000"
+            android:background="#0E0E0E"
             app:srcCompat="@drawable/ayuda"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -75,6 +75,8 @@
             android:id="@+id/version"
             android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:background="#0E0E0E"
+            android:backgroundTint="#0E0E0E"
             app:srcCompat="@drawable/info" />
     </LinearLayout>
 
