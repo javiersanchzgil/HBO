@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.tele.setOnClickListener() {
+            val intent = Intent(this@MainActivity, ConectarTele::class.java)
+            startActivity(intent)
+        }
+
     }
 }

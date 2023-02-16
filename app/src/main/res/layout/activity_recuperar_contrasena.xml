@@ -23,7 +23,7 @@
         android:layout_width="421dp"
         android:layout_height="97dp"
         android:layout_marginTop="92dp"
-        android:text="Escribe tu correo para cambiar recuperar la contraseña"
+        android:text="Escribe tu correo para recuperar tu contraseña"
         android:textAlignment="center"
         android:textColor="#90399F"
         android:textSize="18dp"
@@ -65,9 +65,10 @@
         android:text="enviar"
         android:textColor="#A59999"
         app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/escribirCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/escribirCorreo"
+        app:layout_constraintVertical_bias="0.082" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
