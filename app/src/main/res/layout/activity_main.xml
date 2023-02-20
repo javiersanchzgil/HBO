@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#090909"
+    android:background="#201E1E"
     android:backgroundTint="#0B0A0A"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imagenfondo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="413dp"
+        android:layout_height="672dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/thelast" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="72dp"
+        android:layout_width="415dp"
+        android:layout_height="63dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#020202"
+            android:backgroundTint="#100F0F"
             app:srcCompat="@drawable/inicio"
             tools:ignore="SpeakableTextPresentCheck" />
 
