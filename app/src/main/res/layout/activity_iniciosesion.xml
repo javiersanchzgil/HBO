@@ -120,6 +120,7 @@
         android:bufferType="normal"
         android:layerType="none"
         android:text="iniciar sesion"
+        android:textColor="@color/white"
         android:typeface="normal"
         app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"

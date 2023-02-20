@@ -28,6 +28,11 @@ class iniciosesion : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.olvidarContra.setOnClickListener(){
+            val intent = Intent(this@iniciosesion, RecuperarContrasena::class.java)
+            startActivity(intent)
+        }
+
 
         }
 
