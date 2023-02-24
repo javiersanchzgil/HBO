@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HBO"
         tools:targetApi="31">
+        <!--android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"-->
         <activity
             android:name=".ConectarTele"
             android:exported="false" />

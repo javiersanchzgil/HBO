@@ -21,7 +21,7 @@
 
         <ImageButton
             android:id="@+id/volverajustes"
-            android:layout_width="31dp"
+            android:layout_width="6dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#0E0E0E"
@@ -29,12 +29,12 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <ImageView
-            android:id="@+id/ajustesletra"
-            android:layout_width="373dp"
-            android:layout_height="52dp"
-            android:layout_weight="400"
-            app:srcCompat="@drawable/ajustesletra"
-            tools:srcCompat="@drawable/hbo" />
+            android:id="@+id/imageView3"
+            android:layout_width="314dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hbo"
+            tools:srcCompat="@drawable/captura_de_pantalla_2023_02_23_1832375555_removebg_preview" />
 
     </LinearLayout>
 
@@ -80,6 +80,7 @@
             android:nestedScrollingEnabled="false"
             android:outlineProvider="background"
             android:singleLine="true"
+            android:textColor="#FFFFFF"
             android:textColorHighlight="#A59999"
             android:textColorHint="#A59999"
             android:textColorLink="#A59999"
@@ -104,6 +105,7 @@
             android:nestedScrollingEnabled="false"
             android:outlineProvider="background"
             android:singleLine="true"
+            android:textColor="#FFFEFE"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </LinearLayout>

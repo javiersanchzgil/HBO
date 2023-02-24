@@ -4,95 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#201E1E"
-    android:backgroundTint="#0B0A0A"
+    android:background="#060606"
+    android:backgroundTint="#060606"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imagenfondo"
-        android:layout_width="413dp"
-        android:layout_height="672dp"
+        android:layout_width="418dp"
+        android:layout_height="673dp"
         android:background="#000000"
-        android:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#060606"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
         app:srcCompat="@drawable/thelast" />
 
     <LinearLayout
-        android:layout_width="415dp"
-        android:layout_height="63dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="400dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
-            android:id="@+id/inicio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/menuBoton"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
             android:layout_weight="1"
-            android:backgroundTint="#100F0F"
-            app:srcCompat="@drawable/inicio"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/icons8_casa_48" />
 
-        <ImageButton
-            android:id="@+id/busqueda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/busquedaBoton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
-            app:srcCompat="@drawable/busqueda"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/icons8_b_squeda_24" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
-            app:srcCompat="@drawable/usurario"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/icons8_usuario_32" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="414dp"
-        android:layout_height="54dp"
+        android:id="@+id/linearLayout4"
+        android:layout_width="398dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imagenfondo">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/ajustes"
-            android:layout_width="93dp"
+            android:layout_width="12dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
-            app:srcCompat="@drawable/ajustes"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/icons8_men__redondeado_30" />
 
-        <ImageButton
-            android:id="@+id/hbomax"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="298dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#0C0C0C"
-            app:srcCompat="@drawable/hbo"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/captura_de_pantalla_2023_02_23_1832375555_removebg_preview" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/tele"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#121010"
-            app:srcCompat="@drawable/tele"
-            tools:ignore="SpeakableTextPresentCheck" />
+            app:srcCompat="@drawable/icons8_televisi_n_30" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,8 +16,9 @@ class RecuperarContrasena : AppCompatActivity() {
         val binding = ActivityRecuperarContrasenaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.volverRecuContra.setOnClickListener() {
-            val intent = Intent(this@RecuperarContrasena, MainActivity::class.java)
+        //Boton para acceder a la pantalla de iniciar sesion
+        binding.volverInicio.setOnClickListener() {
+            val intent = Intent(this@RecuperarContrasena, iniciosesion::class.java)
             startActivity(intent)
         }
 

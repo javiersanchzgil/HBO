@@ -20,30 +20,7 @@ class iniciosesion : AppCompatActivity() {
         val binding = ActivityIniciosesionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        
-
-        binding.volverajustes.setOnClickListener() {
-            val intent = Intent(this@iniciosesion, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        if (binding.escribircorreo.text.toString()
-                .isEmpty() && binding.escribircontraseA.text.toString().isEmpty()
-        ) {
-            binding.botonIniciarSesion.isEnabled = false
-        }
-
-        binding.botonIniciarSesion.setOnClickListener() {
-            val intent = Intent(this@iniciosesion, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.olvidarContra.setOnClickListener() {
-            val intent = Intent(this@iniciosesion, RecuperarContrasena::class.java)
-            startActivity(intent)
-        }
-
-        //Setup
+        //Llamada a la funcion setup
         setup()
 
 
@@ -54,7 +31,8 @@ class iniciosesion : AppCompatActivity() {
         val binding = ActivityIniciosesionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.botonIniciarSesion.setOnClickListener {
+        //Boton para poder registrarse en la aplicacion con firebase
+        binding.botonRegistrarse.setOnClickListener {
             if (binding.escribircorreo.text.isNotEmpty() && binding.escribircontraseA.text.isNotEmpty()) {
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                     binding.escribircorreo.text.toString(), binding.escribircontraseA.text.toString()
@@ -69,7 +47,8 @@ class iniciosesion : AppCompatActivity() {
 
         }
 
-        binding.botonRegistrarse.setOnClickListener {
+        //Boton para poder iniciar sesion en la aplicacion con firebase
+        binding.botonIniciarSesion.setOnClickListener {
             if (binding.escribircorreo.text.isNotEmpty() && binding.escribircontraseA.text.isNotEmpty()) {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(
                     binding.escribircorreo.text.toString(), binding.escribircontraseA.text.toString()
@@ -83,10 +62,22 @@ class iniciosesion : AppCompatActivity() {
             }
 
         }
+        //Boton para volver a la pantalla principal
+        binding.volverajustes.setOnClickListener() {
+            val intent = Intent(this@iniciosesion, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        //boton para poder acceder a la pantalla de recuperar contraseña
+        binding.olvidarContra.setOnClickListener() {
+            val intent = Intent(this@iniciosesion, RecuperarContrasena::class.java)
+            startActivity(intent)
+        }
 
     }
 
-
+        //funcion showHome para lanzar una alrta en caso de que el usuario no se haya podido registrar o iniciar sesion
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
@@ -96,6 +87,7 @@ class iniciosesion : AppCompatActivity() {
         dialog.show()
     }
 
+    //funcion showHome para lanzar el email del usuario y el tipo de proveedor que ha utilizado para iniciar sesion
     private fun showHome(email: String, provider: ProviderType) {
         val homeIntent: Intent = Intent(this, MainActivity::class.java).apply {
             putExtra("email", email)
@@ -103,4 +95,6 @@ class iniciosesion : AppCompatActivity() {
         }
         startActivity(homeIntent)
     }
+
+
 }

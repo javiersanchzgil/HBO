@@ -19,19 +19,14 @@ class ConectarTele : AppCompatActivity() {
         val binding = ActivityConectarTeleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
-
-        binding.volverRecuContra.setOnClickListener() {
+    //Boton para acceder a la pantalla principal
+        binding.volverInicio.setOnClickListener() {
             val intent = Intent(this@ConectarTele, MainActivity::class.java)
             startActivity(intent)
         }
 
-
-
+        //Boton para cambiar la forma del botonConectar y mostrar el mensaje flotante
         binding.botonConectar.setOnClickListener() {
-
             when (flag) {
 
                 0 -> {

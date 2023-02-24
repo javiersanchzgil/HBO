@@ -13,16 +13,19 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Boton para acceder a los ajustes
         binding.ajustes.setOnClickListener() {
             val intent = Intent(this@MainActivity, ajustes::class.java)
             startActivity(intent)
         }
 
+        //Boton para acceder a la pantalla de iniciar sesion
         binding.usuario.setOnClickListener(){
             val intent = Intent(this@MainActivity, iniciosesion::class.java)
             startActivity(intent)
         }
 
+        //Boton para acceder a la pantalla para conectar a un dispositivo
         binding.tele.setOnClickListener() {
             val intent = Intent(this@MainActivity, ConectarTele::class.java)
             startActivity(intent)

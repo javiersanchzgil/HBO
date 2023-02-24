@@ -9,7 +9,7 @@
     tools:context=".ConectarTele">
 
     <ImageButton
-        android:id="@+id/volverRecuContra"
+        android:id="@+id/volverInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#0E0E0E"
@@ -18,41 +18,28 @@
         app:srcCompat="@drawable/volver"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="76dp"
-        android:background="#0E0E0E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoConectar"
-        app:srcCompat="@drawable/conectar" />
-
     <TextView
         android:id="@+id/textoConectar"
         android:layout_width="236dp"
         android:layout_height="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="11dp"
         android:text="Conectate a tu dispositvo"
         android:textAlignment="center"
         android:textColor="#E4E4E4"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/botonConectar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="49dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#27B12D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -60,14 +47,24 @@
 
     <Button
         android:id="@+id/botonConectar"
-        android:layout_width="333dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#150433"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="376dp"
+        android:backgroundTint="#120030 "
         android:text="roomtv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/botonConectar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoConectar"
+        app:srcCompat="@drawable/cambiar_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
